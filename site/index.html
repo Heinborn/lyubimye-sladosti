@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Любимые сладости — конфетная лавка в Якутске (более 20 лет)</title>
+  <meta name="description" content="Семейная конфетная лавка «Любимые сладости» в Якутске, ТЦ «Якутяночка», 1 этаж, правое крыло. Более 200 позиций свежих конфет, мармелада, зефира, листового чая и кофе. Можно набрать ассорти хоть по 1 конфетке на пробу.">
+  <meta property="og:title" content="Конфетная лавка «Любимые сладости» — Якутск">
+  <meta property="og:description" content="Более 20 лет в Якутске. Более 200 позиций — от бюджетных любимых сладостей на каждый день до редких дорогих конфет. Ежедневно с 09:00 до 19:00 в ТЦ «Якутяночка».">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#7A1C24">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+  <!-- =====================================================================
+       ЕДИНЫЕ НАСТРОЙКИ САЙТА (SITE_CONFIG)
+       Чтобы обновить телефон, график работы, реквизиты или отключить
+       сезонный блок про новогодние подарки, достаточно поменять строки здесь.
+       ===================================================================== -->
+  <script>
+    window.SITE_CONFIG = {
+      shopName: 'Любимые сладости',
+      shopSubtitle: 'Конфетная лавка',
+      phoneDisplay: '+7 (914) 272-72-60',
+      phoneRaw: '+79142727260',
+      whatsappNumber: '79142727260',
+      whatsappDefaultText: 'Здравствуйте! Подскажите, пожалуйста, по ассортименту в конфетной лавке «Любимые сладости».',
+      addressShort: 'г. Якутск, ул. Рыдзинского, 24',
+      mallInfo: 'ТЦ «Якутяночка», 1 этаж, правое крыло',
+      landmark: 'ориентир — рынок «Манньыаттаах»',
+      postalInfo: 'Строительный округ, 677005',
+      coords: { lat: 62.047892, lon: 129.718779 },
+      twoGisUrl: 'https://2gis.ru/yakutsk/geo/70000001030713332',
+      twoGisRating: '4,2',
+      twoGisStats: '24 оценки · 15 отзывов',
+      schedule: {
+        timezone: 'Asia/Yakutsk',
+        openHour: 9,
+        openMinute: 0,
+        closeHour: 19,
+        closeMinute: 0,
+        text: 'Ежедневно с 09:00 до 19:00'
+      },
+      seasonal: {
+        enabled: true, // Поставьте false, чтобы скрыть новогодний блок вне сезона
+        badge: 'Сезонное предложение · в наличии в магазине',
+        title: 'Готовые новогодние подарки уже ждут вас на витрине',
+        description: 'Собираем готовые новогодние подарки сами — из свежих сладостей и с душой. Наборы уже стоят на витрине в нашей лавке: можно рассмотреть вживую и сразу выбрать подходящий подарок для детей, близких или коллег.',
+        honestNote: 'В этом году индивидуальные наборы под заказ не собираем — приходите выбирать готовые подарки прямо в магазине в ТЦ «Якутяночка».',
+        whatsappText: 'Здравствуйте! Подскажите, пожалуйста, какие готовые новогодние подарки сейчас есть на витрине?'
+      },
+      legal: {
+        owner: 'ИП [Фамилия Имя Отчество]',
+        inn: 'ИНН [000000000000]',
+        ogrnip: 'ОГРНИП [000000000000000]'
+      }
+    };
+  </script>
+
+  <!-- Шапка: строго в 1 строку на десктопе -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Конфетная лавка «Любимые сладости» — наверх">
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <path d="M8 58V28C8 14.745 18.745 4 32 4C45.255 4 56 14.745 56 28V58H8Z" fill="#7A1C24"/>
+          <path d="M12.5 53.5V28C12.5 17.23 21.23 8.5 32 8.5C42.77 8.5 51.5 17.23 51.5 28V53.5H12.5Z" stroke="#C9922E" stroke-width="2.2"/>
+          <path d="M22 43L27.5 22L31 43M21 43H24.5M29 43H32.5" stroke="#FBF6EE" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M44.5 25.5C43 23 40.5 22 38 22.5C34.5 23.2 33 27 33.5 32.5C34 38.5 36.5 43 40.5 43C43 43 44.8 41.5 45.8 39" stroke="#C9922E" stroke-width="2.6" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-title" data-config-text="shopName">Любимые сладости</span>
+          <span class="brand-subtitle" data-config-text="shopSubtitle">Конфетная лавка</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Разделы сайта">
+        <a href="#assortment">Ассортимент</a>
+        <a href="#taste-guide">Гид по вкусам</a>
+        <a href="#gifts" data-seasonal-el>Подарки</a>
+        <a href="#find-us">Как найти</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="status-pill is-open" data-live-status="compact" aria-live="polite">
+          <span class="status-pill__dot" aria-hidden="true"></span>
+          <span class="status-pill__text">Открыто · до 19:00</span>
+        </span>
+
+        <a class="header-phone" href="tel:+79142727260" data-phone-link data-phone-display>+7 (914) 272-72-60</a>
+
+        <a class="btn-wa-compact" href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer" data-wa-link>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.03 2C6.51 2 2.04 6.47 2.04 11.99c0 1.76.46 3.48 1.34 5L2 22l5.15-1.35a9.95 9.95 0 0 0 4.88 1.26h.01c5.52 0 9.99-4.47 9.99-9.99C22.03 6.47 17.55 2 12.03 2Zm5.82 14.18c-.24.68-1.42 1.3-1.98 1.38-.51.07-1.15.11-1.86-.12-.43-.14-.98-.32-1.69-.63-2.98-1.29-4.92-4.29-5.07-4.49-.15-.2-1.21-1.61-1.21-3.07 0-1.46.76-2.18 1.03-2.48.27-.3.59-.38.79-.38.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.84 2.04.91 2.19.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.32.39-.45.53-.15.15-.31.31-.13.61.18.3.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.45 1.51.3.15.48.13.66-.08.18-.2.76-.88.96-1.18.2-.3.4-.25.68-.15.27.1 1.74.82 2.04.97.3.15.5.22.57.35.08.13.08.73-.16 1.41Z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileDrawer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <line x1="4" y1="7" x2="20" y2="7"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="17" x2="20" y2="17"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="container">
+        <nav class="mobile-drawer__nav" aria-label="Мобильное меню">
+          <a href="#assortment">Ассортимент</a>
+          <a href="#taste-guide">Гид по вкусам</a>
+          <a href="#gifts" data-seasonal-el>Готовые новогодние подарки</a>
+          <a href="#find-us">Как найти в ТЦ «Якутяночка»</a>
+        </nav>
+        <div class="mobile-drawer__meta">
+          <a class="header-phone" href="tel:+79142727260" data-phone-link data-phone-display>+7 (914) 272-72-60</a>
+          <a class="btn btn--primary" href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer" data-wa-link>Написать в WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================================================================
+         HERO: Тёплый журнальный первый экран (вдохновлён вывеской)
+         =================================================================== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow">Якутск · ТЦ «Якутяночка» · Более 20 лет с вами</div>
+          <h1 class="hero-title">
+            Конфетная лавка,<br>
+            <em>где можно набрать</em><br>
+            хоть по одной на пробу
+          </h1>
+          <p class="hero-desc">
+            Более 200 позиций свежих сладостей — от бюджетных любимых конфет на каждый день до редких дорогих лакомств, натурального листового чая и ароматного кофе. Знаем каждую начинку и с радостью подскажем, что попробовать.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#taste-guide">
+              Подобрать вкусы за 2 клика
+            </a>
+            <a class="btn btn--outline" href="#find-us">
+              Как найти в «Якутяночке»
+            </a>
+          </div>
+          <div class="hero-facts" aria-label="Главные факты о лавке">
+            <span><strong>Ежедневно</strong> 09:00–19:00</span>
+            <span class="hero-facts__sep" aria-hidden="true">·</span>
+            <span><strong>1 этаж</strong>, правое крыло</span>
+            <span class="hero-facts__sep" aria-hidden="true">·</span>
+            <span>Самовывоз и свой курьер</span>
+            <span class="hero-facts__sep" aria-hidden="true">·</span>
+            <span>Наличные, карта, перевод, QR</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-arch">
+            <div class="hero-arch__inner">
+              <img src="images/hero-sweets.jpg" alt="Россыпь свежих шоколадных конфет, мармелада и драже на льняной скатерти в конфетной лавке «Любимые сладости»" width="900" height="1125" fetchpriority="high">
+            </div>
+          </div>
+          <div class="hero-signpost">
+            <span class="hero-signpost__arrow" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"/>
+                <polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </span>
+            <span>
+              <span class="hero-signpost__title" data-config-text="mallInfo">ТЦ «Якутяночка», 1 этаж, правое крыло</span>
+              <span class="hero-signpost__sub" data-config-text="landmark">ориентир — рынок «Манньыаттаах»</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         О ЛАВКЕ: Семейная традиция в Якутске (без шаблонных 3 цифр)
+         =================================================================== -->
+    <section class="section section--alt" id="about">
+      <div class="container about-grid">
+        <div>
+          <span class="section-kicker">Семейное дело</span>
+          <h2 class="section-title">Больше 20 лет собираем <em>вкусные поводы</em> для чая и встреч</h2>
+          <p class="about-story">
+            Наша конфетная лавка работает в Якутске больше двадцати лет. За эти годы к нам стали приходить целыми семьями — за привычными сладостями к вечернему чаю, за мягким мармеладом для детей и за редкими конфетами в подарок.
+          </p>
+          <blockquote class="about-quote">
+            <p>«В нашей лавке более 200 позиций — от бюджетных любимых сладостей на каждый день до редких дорогих конфет»</p>
+            <span>Свежесть на витрине, честный разговор и никакого навязывания лишнего</span>
+          </blockquote>
+        </div>
+
+        <div class="traditions-grid">
+          <article class="tradition-card">
+            <div class="tradition-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 11c0-3 2.2-5 5-5s5 2 5 5"/>
+                <rect x="4" y="11" width="16" height="8" rx="3"/>
+                <path d="M12 6V4"/>
+              </svg>
+            </div>
+            <h3>Хоть по 1 конфетке</h3>
+            <p>Соберите себе ассорти по одной штучке разных вкусов, чтобы попробовать и точно найти любимые.</p>
+          </article>
+
+          <article class="tradition-card">
+            <div class="tradition-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"/>
+                <path d="M8 9h8M8 13h5"/>
+              </svg>
+            </div>
+            <h3>Знаем каждую начинку</h3>
+            <p>Живая консультация у прилавка: подскажем мягкие, ореховые, хрустящие, кисленькие или без сахара.</p>
+          </article>
+
+          <article class="tradition-card">
+            <div class="tradition-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8L12 3Z"/>
+              </svg>
+            </div>
+            <h3>Всегда свежий привоз</h3>
+            <p>Держим на витрине более 200 позиций и следим, чтобы конфеты, зефир, халва и чай оставались свежими.</p>
+          </article>
+
+          <article class="tradition-card">
+            <div class="tradition-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10Z"/>
+              </svg>
+            </div>
+            <h3>Доверие поколений</h3>
+            <p>Более 20 лет в Якутске — многие наши гости помнят лавку ещё со школьных лет и приходят уже со своими детьми.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         АССОРТИМЕНТ: 7 аппетитных категорий без брендов и ценников
+         =================================================================== -->
+    <section class="section" id="assortment">
+      <div class="container">
+        <div class="assortment-head">
+          <div>
+            <span class="section-kicker">Витрина по категориям</span>
+            <h2 class="section-title">Богатый ассортимент <em>для любого вкуса</em></h2>
+            <p class="section-lead">
+              Более 200 позиций — от бюджетных любимых сладостей на каждый день до редких дорогих конфет. Подбираем по вкусам прямо в лавке или подсказываем свежее наличие в WhatsApp.
+            </p>
+          </div>
+        </div>
+
+        <div class="filter-tabs" role="group" aria-label="Фильтр категорий ассортимента">
+          <button class="filter-tab is-active" type="button" data-filter="all" aria-pressed="true">Все разделы</button>
+          <button class="filter-tab" type="button" data-filter="candies" aria-pressed="false">Конфеты и ПП</button>
+          <button class="filter-tab" type="button" data-filter="tea-snacks" aria-pressed="false">Мармелад и к чаю</button>
+          <button class="filter-tab" type="button" data-filter="drinks" aria-pressed="false">Чай и кофе</button>
+          <button class="filter-tab" type="button" data-filter="gifts" aria-pressed="false" data-seasonal-el>Новогодние подарки</button>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid">
+          <!-- 1. Конфеты на развес (широкая акцентная карточка) -->
+          <article class="catalog-card catalog-card--wide" data-group="candies">
+            <div class="catalog-card__media">
+              <img src="images/cat-candies.jpg" alt="Ассорти конфет на развес: шоколадные конфеты, карамель, драже и монпансье" width="900" height="675" decoding="async">
+              <span class="catalog-card__badge">Можно по 1 штучке</span>
+            </div>
+            <div class="catalog-card__body">
+              <h3 class="catalog-card__title">Конфеты на развес</h3>
+              <p class="catalog-card__desc">
+                Главная радость наших гостей — можно собрать свой пакетик-ассорти буквально по одной конфетке разных видов и спокойно всё попробовать.
+              </p>
+              <ul class="catalog-card__items">
+                <li>Шоколадные</li>
+                <li>Карамель</li>
+                <li>Карамель-подушечки</li>
+                <li>Драже с арахисом</li>
+                <li>«Морские камешки»</li>
+                <li>Монпансье</li>
+              </ul>
+              <div class="catalog-card__footer">
+                <a class="catalog-card__link" href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer" data-wa-link data-wa-text="Здравствуйте! Подскажите, что свежего есть сейчас из конфет на развес?">
+                  Спросить в WhatsApp <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. ПП-сладости -->
+          <article class="catalog-card" data-group="candies">
+            <div class="catalog-card__media">
+              <img src="images/cat-sugarfree.jpg" alt="ПП-сладости: конфеты без сахара и протеиновые конфеты с орехами и какао" width="900" height="675" decoding="async">
+              <span class="catalog-card__badge">Без сахара</span>
+            </div>
+            <div class="catalog-card__body">
+              <h3 class="catalog-card__title">ПП-сладости</h3>
+              <p class="catalog-card__desc">
+                Для тех, кто следит за рационом или выбирает бережные десерты, но не хочет отказываться от вкусного к чаю и кофе.
+              </p>
+              <ul class="catalog-card__items">
+                <li>Конфеты без сахара</li>
+                <li>Протеиновые конфеты</li>
+              </ul>
+              <div class="catalog-card__footer">
+                <a class="catalog-card__link" href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer" data-wa-link data-wa-text="Здравствуйте! Подскажите, какие конфеты без сахара и протеиновые конфеты есть сейчас в наличии?">
+                  Уточнить наличие <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Мармелад, зефир и восточные сладости -->
+          <article class="catalog-card" data-group="tea-snacks">
+            <div class="catalog-card__media">
+              <img src="images/cat-marmalade.jpg" alt="Мармелад, жевательный мармелад, воздушный зефир, пастила и халва" width="900" height="675" decoding="async">
+            </div>
+            <div class="catalog-card__body">
+              <h3 class="catalog-card__title">Мармелад, зефир и восточные сладости</h3>
+              <p class="catalog-card__desc">
+                Мягкие, фруктовые и рассыпчатые угощения — любимая полка для детей и неспешных домашних чаепитий.
+              </p>
+              <ul class="catalog-card__items">
+                <li>Классический мармелад</li>
+                <li>Жевательный мармелад на развес</li>
+                <li>Пастила</li>
+                <li>Халва</li>
+                <li>Зефир</li>
+              </ul>
+              <div class="catalog-card__footer">
+                <a class="catalog-card__link" href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer" data-wa-link data-wa-text="Здравствуйте! Подскажите по свежему мармеладу, зефиру, пастиле и халве.">
+                  Спросить в WhatsApp <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Шоколад и выпечка к чаю -->
+          <article class="catalog-card" data-group="tea-snacks">
+            <div class="catalog-card__media">
+              <img src="images/cat-bakery.jpg" alt="Плиточный шоколад, печенье, хрустящие вафли, сушки и сухарики к чаю" width="900" height="675" decoding="async">
+            </div>
+            <div class="catalog-card__body">
+              <h3 class="catalog-card__title">Шоколад и выпечка к чаю</h3>
+              <p class="catalog-card__desc">
+                Всё, без чего сложно представить тёплый семейный стол и уютные паузы в течение рабочего дня.
+              </p>
+              <ul class="catalog-card__items">
+                <li>Шоколад</li>
+                <li>Печенье</li>
+                <li>Вафли</li>
+                <li>Сушки</li>
+                <li>Сухарики</li>
+              </ul>
+              <div class="catalog-card__footer">
+                <a class="catalog-card__link" href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer" data-wa-link data-wa-text="Здравствуйте! Подскажите, какие печенье, вафли и шоколад есть сегодня к чаю?">
+                  Уточнить наличие <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Натуральный листовой чай -->
+          <article class="catalog-card" data-group="drinks">
+            <div class="catalog-card__media">
+              <img src="images/cat-tea.jpg" alt="Натуральный листовой чай: чёрный, зелёный и фруктовый купаж" width="900" height="675" decoding="async">
+            </div>
+            <div class="catalog-card__body">
+              <h3 class="catalog-card__title">Натуральный листовой чай</h3>
+              <p class="catalog-card__desc">
+                Ароматный рассыпной чай на любой вкус — от крепкого классического чёрного до ярких фруктово-ягодных купажей.
+              </p>
+              <ul class="catalog-card__items">
+                <li>Чёрный</li>
+                <li>Зелёный</li>
+                <li>Купажированный</li>
+                <li>Фруктовый</li>
+              </ul>
+              <div class="catalog-card__footer">
+                <a class="catalog-card__link" href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer" data-wa-link data-wa-text="Здравствуйте! Подскажите по натуральному листовому чаю — какие вкусы сейчас в наличии?">
+                  Спросить про чай <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Кофе -->
+          <article class="catalog-card catalog-card--coffee" data-group="drinks">
+            <div class="catalog-card__media">
+              <img src="images/cat-coffee.jpg" alt="Кофе в зёрнах, сублимированный кофе и чашка свежего кофе" width="900" height="675" decoding="async">
+            </div>
+            <div class="catalog-card__body">
+              <h3 class="catalog-card__title">Кофе</h3>
+              <p class="catalog-card__desc">
+                Утренний заряд в сибирские морозы: удобный выбор на каждый день домой и в офис.
+              </p>
+              <ul class="catalog-card__items">
+                <li>Зерновой</li>
+                <li>Сублимированный</li>
+                <li>Порционный</li>
+              </ul>
+              <div class="catalog-card__footer">
+                <a class="catalog-card__link" href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer" data-wa-link data-wa-text="Здравствуйте! Подскажите, какой зерновой, сублимированный и порционный кофе есть в наличии?">
+                  Уточнить наличие <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Сезонное: готовые новогодние подарки (широкая акцентная карточка) -->
+          <article class="catalog-card catalog-card--wide catalog-card--seasonal" data-group="gifts" data-seasonal-el>
+            <div class="catalog-card__media">
+              <img src="images/seasonal-gifts.jpg" alt="Готовые новогодние подарки в бордовой и золотой упаковке со свежими конфетами" width="900" height="675" decoding="async">
+              <span class="catalog-card__badge">Сезонное · в магазине</span>
+            </div>
+            <div class="catalog-card__body">
+              <h3 class="catalog-card__title">Готовые новогодние подарки</h3>
+              <p class="catalog-card__desc">
+                Собираем готовые новогодние подарки сами, они уже ждут вас на витрине в лавке. Можно спокойно выбрать готовый набор для детей, родных и коллег.
+              </p>
+              <p class="catalog-card__note">
+                В этом году индивидуальные наборы под заказ не собираем — приходите выбирать готовые подарки прямо в магазине.
+              </p>
+              <div class="catalog-card__footer">
+                <a class="catalog-card__link" href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer" data-wa-link data-wa-text="Здравствуйте! Подскажите, какие готовые новогодние подарки сейчас есть на витрине в магазине?">
+                  Уточнить наличие подарков <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         ВЫДЕЛЕННЫЙ СЕЗОННЫЙ БЛОК: Готовые новогодние подарки
+         =================================================================== -->
+    <section class="gifts-section" id="gifts" data-seasonal-el>
+      <div class="container">
+        <div class="gifts-banner">
+          <div class="gifts-banner__content">
+            <span class="gifts-banner__kicker" data-config-text="seasonal.badge">Сезонное предложение · в наличии в магазине</span>
+            <h2 class="gifts-banner__title" data-config-text="seasonal.title">Готовые новогодние подарки уже ждут вас на витрине</h2>
+            <p class="gifts-banner__desc" data-config-text="seasonal.description">
+              Собираем готовые новогодние подарки сами — из свежих сладостей и с душой. Наборы уже стоят на витрине в нашей лавке: можно рассмотреть вживую и сразу выбрать подходящий подарок для детей, близких или коллег.
+            </p>
+            <div class="honest-callout">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+              <p>
+                <strong>Честное уточнение:</strong> <span data-config-text="seasonal.honestNote">В этом году индивидуальные наборы под заказ не собираем — приходите выбирать готовые подарки прямо в магазине в ТЦ «Якутяночка».</span>
+              </p>
+            </div>
+            <div class="gifts-banner__actions">
+              <a class="btn btn--gold" href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer" data-wa-link data-wa-text="Здравствуйте! Подскажите, пожалуйста, какие готовые новогодние подарки сейчас есть на витрине?">
+                Уточнить наличие подарков в WhatsApp
+              </a>
+              <a class="btn btn--surface" href="#find-us">
+                Адрес в ТЦ «Якутяночка»
+              </a>
+            </div>
+          </div>
+
+          <div class="gifts-banner__media">
+            <div class="gifts-banner__frame">
+              <img src="images/seasonal-gifts.jpg" alt="Праздничные готовые новогодние подарки в лавке «Любимые сладости»" width="900" height="675" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         ИНТЕРАКТИВНАЯ ФИШКА №1: Гид по вкусам за 2 клика
+         =================================================================== -->
+    <section class="section section--alt" id="taste-guide">
+      <div class="container">
+        <span class="section-kicker">Собери идею своего визита</span>
+        <h2 class="section-title">Гид по вкусам <em>за 2 клика</em></h2>
+        <p class="section-lead">
+          Не знаете, с чего начать среди более чем 200 позиций? Выберите настроение и любимый вкус — подскажем, что попросить у витрины или спросить в WhatsApp перед визитом.
+        </p>
+
+        <div class="guide-shell">
+          <div class="guide-controls">
+            <div class="guide-step">
+              <div class="guide-step__label">
+                <span class="guide-step__num">1</span>
+                <span>Какое сегодня настроение?</span>
+              </div>
+              <div class="guide-options" id="moodChoices" role="radiogroup" aria-label="Выберите настроение визита">
+                <button class="guide-choice is-selected" type="button" role="radio" aria-checked="true" data-value="assorti">
+                  <span class="guide-choice__title">Ассорти по 1 конфетке</span>
+                  <span class="guide-choice__hint">Взять разного на пробу</span>
+                </button>
+                <button class="guide-choice" type="button" role="radio" aria-checked="false" data-value="pp">
+                  <span class="guide-choice__title">ПП без сахара</span>
+                  <span class="guide-choice__hint">Полезный десерт без лишнего</span>
+                </button>
+                <button class="guide-choice" type="button" role="radio" aria-checked="false" data-value="tea_coffee">
+                  <span class="guide-choice__title">К чаю и кофе</span>
+                  <span class="guide-choice__hint">Уютный стол домой или в офис</span>
+                </button>
+                <button class="guide-choice" type="button" role="radio" aria-checked="false" data-value="gift" data-seasonal-el>
+                  <span class="guide-choice__title">Готовый новогодний подарок</span>
+                  <span class="guide-choice__hint">Выбрать готовый с витрины</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="guide-step">
+              <div class="guide-step__label">
+                <span class="guide-step__num">2</span>
+                <span>Какой вкус ближе?</span>
+              </div>
+              <div class="guide-options" id="flavorChoices" role="radiogroup" aria-label="Выберите любимый вкус">
+                <button class="guide-choice is-selected" type="button" role="radio" aria-checked="true" data-value="chocolate">
+                  <span class="guide-choice__title">Шоколадное</span>
+                  <span class="guide-choice__hint">Тёмный, молочный, пралине</span>
+                </button>
+                <button class="guide-choice" type="button" role="radio" aria-checked="false" data-value="fruit">
+                  <span class="guide-choice__title">Фруктовое и мармелад</span>
+                  <span class="guide-choice__hint">Ягоды, цитрус, зефир</span>
+                </button>
+                <button class="guide-choice" type="button" role="radio" aria-checked="false" data-value="nut">
+                  <span class="guide-choice__title">Ореховое и халва</span>
+                  <span class="guide-choice__hint">Арахис, халва, сытные начинки</span>
+                </button>
+                <button class="guide-choice" type="button" role="radio" aria-checked="false" data-value="surprise">
+                  <span class="guide-choice__title">Сюрприз от продавца</span>
+                  <span class="guide-choice__hint">Довериться нашему опыту</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="guide-result" id="tasteResult" aria-live="polite">
+            <div>
+              <span class="guide-result__eyebrow">Персональная рекомендация лавки</span>
+              <h3 class="guide-result__title" id="guideResultTitle">Шоколадное ассорти по 1 конфетке</h3>
+              <p class="guide-result__text" id="guideResultText">
+                Начните с маленького кулёчка на пробу: возьмите по одной конфете с тёмным пралине, цельным орехом, сливочной помадкой и классическим трюфелем.
+              </p>
+
+              <div class="guide-result__picks-label">Что посмотреть на витрине</div>
+              <ul class="guide-result__tags" id="guideResultTags">
+                <li>Шоколадные конфеты с пралине</li>
+                <li>Конфеты с цельным орехом</li>
+                <li>Классический трюфель</li>
+              </ul>
+
+              <p class="guide-result__note" id="guideResultNote">
+                В лавке можно набрать ассорти буквально по 1 штучке любого вида.
+              </p>
+            </div>
+
+            <div class="guide-result__actions">
+              <a class="btn btn--primary" id="guideWaBtn" href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12.03 2C6.51 2 2.04 6.47 2.04 11.99c0 1.76.46 3.48 1.34 5L2 22l5.15-1.35a9.95 9.95 0 0 0 4.88 1.26h.01c5.52 0 9.99-4.47 9.99-9.99C22.03 6.47 17.55 2 12.03 2Zm5.82 14.18c-.24.68-1.42 1.3-1.98 1.38-.51.07-1.15.11-1.86-.12-.43-.14-.98-.32-1.69-.63-2.98-1.29-4.92-4.29-5.07-4.49-.15-.2-1.21-1.61-1.21-3.07 0-1.46.76-2.18 1.03-2.48.27-.3.59-.38.79-.38.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.84 2.04.91 2.19.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.32.39-.45.53-.15.15-.31.31-.13.61.18.3.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.45 1.51.3.15.48.13.66-.08.18-.2.76-.88.96-1.18.2-.3.4-.25.68-.15.27.1 1.74.82 2.04.97.3.15.5.22.57.35.08.13.08.73-.16 1.41Z"/>
+                </svg>
+                <span>Уточнить наличие в WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         ИНТЕРАКТИВНАЯ ФИШКА №2: Как найти в ТЦ «Якутяночка» + Оплата/Самовывоз
+         =================================================================== -->
+    <section class="section" id="find-us">
+      <div class="container">
+        <span class="section-kicker">Адрес и маршрут</span>
+        <h2 class="section-title">Как легко найти нас в ТЦ «Якутяночка» <em>(даже в −40°C)</em></h2>
+        <p class="section-lead">
+          Чтобы не плутать на морозе: мы находимся на первом этаже, сразу в правом крыле — ориентируйтесь на рынок «Манньыаттаах» и нашу бордовую вывеску со стрелкой.
+        </p>
+
+        <div class="find-grid">
+          <div class="find-card">
+            <div class="signboard-pointer">
+              <div class="signboard-pointer__left">
+                <span class="signboard-pointer__tag">Указатель внутри ТЦ</span>
+                <span class="signboard-pointer__text">1 этаж · правое крыло</span>
+              </div>
+              <span class="signboard-pointer__badge">
+                ВХОД
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                  <polyline points="12 5 19 12 12 19"/>
+                </svg>
+              </span>
+            </div>
+
+            <div class="address-block">
+              <p class="address-block__main" data-config-text="addressShort">г. Якутск, ул. Рыдзинского, 24</p>
+              <p class="address-block__landmark">ТЦ «Якутяночка» · ориентир — рынок «Манньыаттаах»</p>
+              <p class="address-block__district" data-config-text="postalInfo">Строительный округ, 677005</p>
+            </div>
+
+            <ol class="steps-list">
+              <li>
+                <span class="steps-list__num">1</span>
+                <span>Подъезжайте к <strong>ТЦ «Якутяночка»</strong> со стороны ул. Рыдзинского, ориентир — рынок «Манньыаттаах».</span>
+              </li>
+              <li>
+                <span class="steps-list__num">2</span>
+                <span>Заходите на <strong>1 этаж</strong> и сразу поворачивайте в <strong>правое крыло</strong> — не нужно подниматься по лестницам.</span>
+              </li>
+              <li>
+                <span class="steps-list__num">3</span>
+                <span>Ищите бордовую вывеску <strong>«Конфетная лавка · Любимые сладости»</strong> — мы согреем ароматом чая, кофе и свежих конфет.</span>
+              </li>
+            </ol>
+
+            <div class="live-hours-box">
+              <span class="live-hours-box__schedule" data-config-text="schedule.text">Ежедневно с 09:00 до 19:00</span>
+              <span class="live-hours-box__status" data-live-status="full">Сейчас в Якутске · Открыто до 19:00</span>
+            </div>
+
+            <div class="find-actions">
+              <a class="btn btn--primary" href="https://2gis.ru/yakutsk/geo/70000001030713332" target="_blank" rel="noopener noreferrer" data-2gis-link>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 21s-6-5.4-6-10.5A6 6 0 1 1 18 10.5C18 15.6 12 21 12 21Z"/>
+                  <circle cx="12" cy="10.5" r="2.2"/>
+                </svg>
+                <span>Построить маршрут в 2ГИС</span>
+              </a>
+              <a class="btn btn--outline" href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer" data-wa-link>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12.03 2C6.51 2 2.04 6.47 2.04 11.99c0 1.76.46 3.48 1.34 5L2 22l5.15-1.35a9.95 9.95 0 0 0 4.88 1.26h.01c5.52 0 9.99-4.47 9.99-9.99C22.03 6.47 17.55 2 12.03 2Zm5.82 14.18c-.24.68-1.42 1.3-1.98 1.38-.51.07-1.15.11-1.86-.12-.43-.14-.98-.32-1.69-.63-2.98-1.29-4.92-4.29-5.07-4.49-.15-.2-1.21-1.61-1.21-3.07 0-1.46.76-2.18 1.03-2.48.27-.3.59-.38.79-.38.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.84 2.04.91 2.19.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.32.39-.45.53-.15.15-.31.31-.13.61.18.3.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.45 1.51.3.15.48.13.66-.08.18-.2.76-.88.96-1.18.2-.3.4-.25.68-.15.27.1 1.74.82 2.04.97.3.15.5.22.57.35.08.13.08.73-.16 1.41Z"/>
+                </svg>
+                <span>Написать в WhatsApp</span>
+              </a>
+            </div>
+
+            <div class="find-subactions">
+              <a class="find-phone-link" href="tel:+79142727260" data-phone-link data-phone-display>+7 (914) 272-72-60</a>
+              <button class="copy-btn" id="copyAddressBtn" type="button">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                </svg>
+                <span class="copy-btn__label">Скопировать адрес</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="map-card">
+            <div class="map-switcher" role="tablist" aria-label="Режим карты">
+              <button class="map-switch-btn is-active" type="button" role="tab" aria-selected="true" data-map-tab="scheme">Схема ориентиров (1 этаж)</button>
+              <button class="map-switch-btn" type="button" role="tab" aria-selected="false" data-map-tab="map">Карта района (OSM)</button>
+            </div>
+
+            <div class="map-viewport">
+              <div class="map-pane" data-map-pane="scheme" role="tabpanel">
+                <svg class="map-scheme-svg" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Схема ориентиров: ул. Рыдзинского, 24, рынок Манньыаттаах, ТЦ Якутяночка, 1 этаж, правое крыло">
+                  <rect width="640" height="420" fill="#FBF6EE"/>
+                  <!-- Дорога ул. Рыдзинского -->
+                  <rect x="0" y="340" width="640" height="48" fill="#EAD9C1"/>
+                  <line x1="20" y1="364" x2="620" y2="364" stroke="#FFFDF9" stroke-width="2" stroke-dasharray="10 10"/>
+                  <text x="320" y="370" text-anchor="middle" fill="#5E463E" font-family="Manrope, sans-serif" font-size="14" font-weight="700">ул. Рыдзинского · Строительный округ</text>
+
+                  <!-- Ориентир рынок Манньыаттаах -->
+                  <rect x="34" y="190" width="184" height="114" rx="14" fill="#F3E9DA" stroke="#C9922E" stroke-width="1.5" stroke-dasharray="6 4"/>
+                  <text x="126" y="236" text-anchor="middle" fill="#5E463E" font-family="Manrope, sans-serif" font-size="12" font-weight="700">ОРИЕНТИР РЯДОМ</text>
+                  <text x="126" y="260" text-anchor="middle" fill="#2B1814" font-family="Cormorant Garamond, serif" font-size="22" font-weight="700">Рынок</text>
+                  <text x="126" y="282" text-anchor="middle" fill="#2B1814" font-family="Cormorant Garamond, serif" font-size="21" font-weight="700">«Манньыаттаах»</text>
+
+                  <!-- ТЦ Якутяночка -->
+                  <rect x="248" y="42" width="358" height="262" rx="20" fill="#FFFDF9" stroke="#7A1C24" stroke-width="2.2"/>
+                  <text x="427" y="76" text-anchor="middle" fill="#7A1C24" font-family="Cormorant Garamond, serif" font-size="25" font-weight="700">ТЦ «Якутяночка», д. 24</text>
+                  <text x="427" y="96" text-anchor="middle" fill="#5E463E" font-family="Manrope, sans-serif" font-size="13" font-weight="600">План 1 этажа · без лестниц</text>
+
+                  <!-- Левое и правое крыло -->
+                  <rect x="272" y="122" width="122" height="116" rx="12" fill="#F3E9DA"/>
+                  <text x="333" y="184" text-anchor="middle" fill="#7D645B" font-family="Manrope, sans-serif" font-size="13" font-weight="600">Левое крыло</text>
+
+                  <rect x="422" y="122" width="160" height="116" rx="14" fill="#7A1C24" stroke="#C9922E" stroke-width="2"/>
+                  <text x="502" y="156" text-anchor="middle" fill="#DFB563" font-family="Manrope, sans-serif" font-size="11" font-weight="700">ПРАВОЕ КРЫЛО</text>
+                  <text x="502" y="182" text-anchor="middle" fill="#FBF6EE" font-family="Cormorant Garamond, serif" font-size="21" font-weight="700">Любимые</text>
+                  <text x="502" y="204" text-anchor="middle" fill="#FBF6EE" font-family="Cormorant Garamond, serif" font-size="21" font-weight="700">сладости</text>
+
+                  <!-- Вход и маршрут -->
+                  <rect x="366" y="290" width="96" height="26" rx="13" fill="#C9922E"/>
+                  <text x="414" y="308" text-anchor="middle" fill="#2B1814" font-family="Manrope, sans-serif" font-size="12" font-weight="800">ВХОД В ТЦ</text>
+                  <path d="M414 288 V256 H502 V242" stroke="#C9922E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <polygon points="502,235 495,246 509,246" fill="#C9922E"/>
+                </svg>
+              </div>
+
+              <div class="map-pane" data-map-pane="map" role="tabpanel" hidden>
+                <iframe
+                  title="Карта расположения конфетной лавки «Любимые сладости» в Якутске на ул. Рыдзинского, 24"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=129.7128%2C62.0456%2C129.7248%2C62.0502&amp;layer=mapnik&amp;marker=62.047892%2C129.718779"
+                  loading="lazy"></iframe>
+              </div>
+            </div>
+
+            <div class="map-footer-bar">
+              <span>Координаты: 62.047892, 129.718779</span>
+              <a href="https://2gis.ru/yakutsk/geo/70000001030713332" target="_blank" rel="noopener noreferrer" data-2gis-link>Открыть карточку в 2ГИС →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Честные блоки: Самовывоз и Оплата + Рейтинг 2ГИС -->
+        <div class="service-grid">
+          <article class="service-card">
+            <h3 class="service-card__title">Самовывоз и отправка своего курьера</h3>
+            <p class="service-card__text">
+              <strong>Самовывоз из лавки в ТЦ «Якутяночка».</strong> Собственной доставки у нас нет — при желании вы можете самостоятельно оплатить и отправить к нам своего курьера или такси (предварительно напишите нам в WhatsApp, чтобы мы собрали заказ к приезду).
+            </p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Удобная оплата в лавке</h3>
+            <div class="pay-chips">
+              <span class="pay-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="6" width="20" height="12" rx="2"/>
+                  <circle cx="12" cy="12" r="2.5"/>
+                </svg>
+                Наличные
+              </span>
+              <span class="pay-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="5" width="20" height="14" rx="2"/>
+                  <line x1="2" y1="10" x2="22" y2="10"/>
+                </svg>
+                Банковская карта
+              </span>
+              <span class="pay-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17L17 7"/>
+                  <path d="M8 7h9v9"/>
+                </svg>
+                Перевод с карты
+              </span>
+              <span class="pay-chip">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="7" height="7"/>
+                  <rect x="14" y="3" width="7" height="7"/>
+                  <rect x="3" y="14" width="7" height="7"/>
+                  <path d="M14 14h3v3h-3zM18 18h3v3h-3z"/>
+                </svg>
+                QR-код
+              </span>
+            </div>
+            <div class="rating-strip">
+              <span class="rating-badge">
+                <span class="rating-badge__score" data-config-text="twoGisRating">4,2</span>
+                <span>на 2ГИС · <span data-config-text="twoGisStats">24 оценки · 15 отзывов</span></span>
+              </span>
+              <a href="https://2gis.ru/yakutsk/geo/70000001030713332" target="_blank" rel="noopener noreferrer" data-2gis-link>Читать в 2ГИС →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       ФУТЕР: Контакты и российский комплаенс
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Конфетная лавка «Любимые сладости»</p>
+          <p class="footer-tagline">
+            Семейный бизнес в Якутске — более 20 лет свежих сладостей, душевного выбора и честных рекомендаций по начинкам.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Адрес и режим работы</h4>
+          <ul class="footer-list">
+            <li data-config-text="addressShort">г. Якутск, ул. Рыдзинского, 24</li>
+            <li data-config-text="mallInfo">ТЦ «Якутяночка», 1 этаж, правое крыло</li>
+            <li data-config-text="landmark">ориентир — рынок «Манньыаттаах»</li>
+            <li data-config-text="schedule.text">Ежедневно с 09:00 до 19:00</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Связь и маршруты</h4>
+          <ul class="footer-list">
+            <li>Телефон: <a href="tel:+79142727260" data-phone-link data-phone-display>+7 (914) 272-72-60</a></li>
+            <li><a href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer" data-wa-link>Написать в WhatsApp</a></li>
+            <li><a href="https://2gis.ru/yakutsk/geo/70000001030713332" target="_blank" rel="noopener noreferrer" data-2gis-link>Карточка в 2ГИС</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <div>
+          <span data-config-text="legal.owner">ИП [Фамилия Имя Отчество]</span> ·
+          <span data-config-text="legal.inn">ИНН [000000000000]</span> ·
+          <span data-config-text="legal.ogrnip">ОГРНИП [000000000000000]</span>
+        </div>
+        <div>
+          Информация на сайте носит ознакомительный характер и ни при каких условиях не является публичной офертой, определяемой положениями ст. 437 Гражданского кодекса РФ. Цены и актуальное наличие конкретных позиций уточняйте в лавке или в WhatsApp.
+        </div>
+        <div>
+          Соблюдение 152-ФЗ РФ «О персональных данных»: сайт не использует формы сбора заявок, не хранит и не обрабатывает персональные данные посетителей. Переход в WhatsApp осуществляется пользователем самостоятельно.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       МОБИЛЬНАЯ СТЕКЛЯННАЯ НИЖНЯЯ ПАНЕЛЬ (только до 767px)
+       ===================================================================== -->
+  <nav class="mobile-dock" aria-label="Быстрые действия">
+    <a class="mobile-dock__btn" href="tel:+79142727260" data-phone-link>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0 1 22 16.92Z"/>
+      </svg>
+      <span>Позвонить</span>
+    </a>
+    <a class="mobile-dock__btn mobile-dock__btn--primary" href="https://wa.me/79142727260" target="_blank" rel="noopener noreferrer" data-wa-link>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12.03 2C6.51 2 2.04 6.47 2.04 11.99c0 1.76.46 3.48 1.34 5L2 22l5.15-1.35a9.95 9.95 0 0 0 4.88 1.26h.01c5.52 0 9.99-4.47 9.99-9.99C22.03 6.47 17.55 2 12.03 2Zm5.82 14.18c-.24.68-1.42 1.3-1.98 1.38-.51.07-1.15.11-1.86-.12-.43-.14-.98-.32-1.69-.63-2.98-1.29-4.92-4.29-5.07-4.49-.15-.2-1.21-1.61-1.21-3.07 0-1.46.76-2.18 1.03-2.48.27-.3.59-.38.79-.38.2 0 .39 0 .56.01.18.01.42-.07.66.5.24.59.84 2.04.91 2.19.07.15.12.33.02.53-.1.2-.15.33-.3.5-.15.18-.32.39-.45.53-.15.15-.31.31-.13.61.18.3.79 1.31 1.7 2.12 1.17 1.04 2.15 1.36 2.45 1.51.3.15.48.13.66-.08.18-.2.76-.88.96-1.18.2-.3.4-.25.68-.15.27.1 1.74.82 2.04.97.3.15.5.22.57.35.08.13.08.73-.16 1.41Z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+    <a class="mobile-dock__btn" href="https://2gis.ru/yakutsk/geo/70000001030713332" target="_blank" rel="noopener noreferrer" data-2gis-link>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 21s-6-5.4-6-10.5A6 6 0 1 1 18 10.5C18 15.6 12 21 12 21Z"/>
+        <circle cx="12" cy="10.5" r="2.2"/>
+      </svg>
+      <span>2ГИС</span>
+    </a>
+  </nav>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
